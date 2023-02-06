@@ -1,10 +1,10 @@
-name: workflow
-#on: [repository_dispatch]
-on: [workflow_dispatch]
+name: repository_dispatch
+
+on: [repository_dispatch]
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Triggering Wokflow 2"
+      - run: echo "Triggering repository_dispatch"
       - name: Checkout
         uses: actions/checkout@v2
