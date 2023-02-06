@@ -5,6 +5,9 @@ jobs:
   cypress-run:
     runs-on: ubuntu-latest
     steps:
+      - name: Testing inputs
+        #if: ${{ github.ref == 're' }}
       - run: echo "Triggering Wokflow Dispatch but from test branch"
+      - run: echo ${{ github.ref }}
       - name: Checkout
         uses: actions/checkout@v2
