@@ -5,6 +5,6 @@ jobs:
   cypress-run:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Triggering Wokflow Dispatch"
+      - run: echo "Triggering Wokflow Dispatch but from test branch"
       - name: Checkout
         uses: actions/checkout@v2
