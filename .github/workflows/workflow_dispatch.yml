@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Testing inputs
-        if: ${{ github.ref == 'main' }}
+      - if: ${{ github.ref == 'main' }}
       - run: echo "Triggering Wokflow Dispatch but from test branch"
       - name: Checkout
         uses: actions/checkout@v2
